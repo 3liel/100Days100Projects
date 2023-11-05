@@ -1,0 +1,163 @@
+body{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-image: url(/Imagenes/Animation-1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 1000;
+}
+
+.nav_bar{
+    background-color: rgba(57,77,115);
+    width: 520px;
+    height: 10px;   
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.name {
+    color: white;
+    font-weight: bold;
+    flex-grow: 1;
+    margin: 0px 0px 0px 430px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name_enlace {
+    text-decoration: none;
+    color: white;
+}
+
+.name_enlace:hover {
+    animation: pulso 1s infinite alternate;
+    transition: color 0.3s;
+}
+
+.button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+}
+
+.button.cerrar {
+    background-color: #c70909;
+}
+
+.button.pausa {
+    background-color: #d8d407;
+}
+
+.button.abrir {
+    background-color: #17bd11;
+}
+
+.button.cerrar:hover {
+    background-color: #ff1818; 
+}
+
+.button.pausa:hover {
+    background-color: #fffb00; 
+}
+
+.button.abrir:hover {
+    background-color: #18ee10; 
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.texto_terminal {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 24px;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border: 0px;
+    background-color: #00000092;
+    color:#ffffff;
+    font-family: 'Source Code Pro', monospace;
+}
+ 
+.terminal__pwd{
+    color: #ec8c32;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.O1XD {
+    color: white;
+}
+
+.c {
+    font-weight: bold;
+    color: #407ef1;
+}
+
+.python {
+    font-weight: bold;
+    color: #f5dd06;
+}
+
+.caca {
+    font-weight: bold;
+    color: #f57906;
+}
+
+.code {
+    color: #ffffff;
+    white-space: nowrap;
+    border-right: 4px solid
+}
+
+span.code.C{
+    width: 22ch;
+    animation: typing 2s steps(22),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+
+ span.code.Python{
+    width: 20ch;
+    animation: typing 2s steps(20),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+
+span.code.Caca{
+    width: 33ch;
+    animation: typing 2s steps(33),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+  
+@keyframes pulso {
+    0% {
+        color: #394D73; /* Color original */
+    }
+    100% {
+        color: #D9304F; /* Nuevo color durante el pulso */
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50% { border-color: transparent;}
+}
